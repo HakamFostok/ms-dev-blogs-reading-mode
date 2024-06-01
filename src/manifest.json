@@ -1,0 +1,15 @@
+{
+    "name": "Microsoft DevBlogs Reading Mode",
+    "description": "Remove a lot of clutter from Microsoft DevBlogs to let you focus on Reading only. It will remove the header, footer, comments, feedback icon, social media icons, and related topics.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "hello.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://devblogs.microsoft.com/*"],
+            "js": ["/devblogsReadingMode.js"]
+        }
+    ]
+  }
