@@ -39,6 +39,10 @@ var element = document.querySelector('#single-wrapper');
 element.style.paddingTop = '0px';
 element.style.paddingBottom = '0px';
 
+// remove email subscription
+var element = document.querySelector('div.alert-banner');
+element.parentElement.removeChild(element);
+
 var element = document.querySelector('#featured');
 element.style.paddingLeft = '0px';
 element.style.paddingRight = '0px';
