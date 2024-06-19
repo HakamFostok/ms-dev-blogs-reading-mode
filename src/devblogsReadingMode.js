@@ -43,6 +43,26 @@ element.style.paddingBottom = '0px';
 var element = document.querySelector('div.alert-banner');
 element.parentElement.removeChild(element);
 
+// remove image of author at the top of the blog
+var element = document.querySelector('div.author-header');
+element.parentElement.removeChild(element);
+
+// remove image of author at the top of the blog
+var element = document.querySelector('span.entry-meta-comment');
+element.parentElement.removeChild(element);
+
+// this statement is duplicated and executed for the second-time, this is not a bug
+// we need to execute this for the second time
+var element = document.querySelector('span.entry-meta-comment');
+element.parentElement.removeChild(element);
+
+// remove the social links at the bottom of the blog
+var element = document.querySelector('div.social-links');
+element.parentElement.removeChild(element);
+
+var element = document.querySelector('div.entry-meta-layout');
+element.style.marginBottom = '0px';
+
 var element = document.querySelector('#featured');
 element.style.paddingLeft = '0px';
 element.style.paddingRight = '0px';
