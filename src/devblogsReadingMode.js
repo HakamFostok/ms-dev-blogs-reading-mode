@@ -1,60 +1,31 @@
-// remove social media button on the left
-removeElement('div.social-icon-general');
+removeElement('div.container-evo');
+removeElement('aside.post-sidebar');
+removeElement('div.left-sidebar');
+removeElement('div#usabilla-button');
+removeElement('div#footerArea');
+removeElement('div.stay-informed');
+removeElement('div#comments');
+removeElement('div.container-three-column-even');
+removeElement('div.evo-right-sidebar');
+removeElement('header.c-uhfh.context-uhf.c-sgl-stck.c-category-header');
+removeElement('div.border-bottom.pb-40.mb-64');
+removeElement('div.d-flex.justify-content-between.flex-column.flex-lg-row.align-items-center.gap-24.mb-40');
+removeElement('h2.fs-20.mb-24');
+removeElement('div.d-flex.gap-24.flex-column.flex-lg-row');
 
-// remove header
-removeElement('header.c-uhfh');
+let element = document.querySelector('div.container-evo');
+if (element)
+    element.classList.remove("mt-56");
 
-// remove comments button on the side
-removeElement('div.back-comment-buttons');
+element = document.querySelector("#single-wrapper");
+if (element)
+    element.classList.remove("container-three-column-post");
 
-// remove feedback button on the side
-removeElement('div.vscom-usabilla-button');
-
-// remove feedback button on the side
-removeElement('div.related-postssection');
-
-// remove comments area
-removeElement('div.comments-area');
-
-// remove footer region
-removeElement('#footerRegion');
-
-// remove footer region
-removeElement('#wrapper-footer-1');
-
-// remove footer region
-removeElement('footer.cattagsarea');
-
-// remove email subscription
-removeElement('div.alert-banner');
-
-// remove image of author at the top of the blog
-removeElement('div.author-header');
-
-// remove image of author at the top of the blog
-removeElement('span.entry-meta-comment');
-
-// this statement is duplicated and executed for the second-time, this is not a bug
-// we need to execute this for the second time
-removeElement('span.entry-meta-comment');
-
-// remove the social links at the bottom of the blog
-removeElement('div.social-links');
-
-// remove paddings and margins
-let element = document.querySelector('#single-wrapper');
-element.style.paddingTop = '0px';
-element.style.paddingBottom = '0px';
-
-element = document.querySelector('div.entry-meta-layout');
-element.style.marginBottom = '0px';
-
-element = document.querySelector('#featured');
-element.style.paddingLeft = '0px';
-element.style.paddingRight = '0px';
-element.style.marginRight = '0px';
-element.style.marginLeft = '0px';
-element.style.paddingTop = '0px';
+element = document.querySelector("article.middle-column.pe-xl-198");
+if (element) {
+    element.classList.remove("middle-column");
+    element.classList.remove("pe-xl-198");
+}
 
 function removeElement(elementName) {
     try {
