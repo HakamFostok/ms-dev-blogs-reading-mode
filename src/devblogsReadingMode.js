@@ -27,6 +27,11 @@ if (element) {
     element.classList.remove("pe-xl-198");
 }
 
+element = document.getElementsByTagName('h2');
+for (let i = 0; i < element.length; i++) {
+     element[i].style.margin = '0';
+}
+
 function removeElement(elementName) {
     try {
         const element = document.querySelector(elementName);
